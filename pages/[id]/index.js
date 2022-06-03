@@ -35,14 +35,14 @@ const View = () => {
 
           <div className="mt-10 flex items-center gap-5">
             <Link href={`/${id}/edit`} passHref>
-              <a className="px-7 py-3 bg-white text-black font-bold rounded-full text-lg no-underline">
+              <a className="px-7 py-3 bg-white text-black font-bold rounded-full no-underline">
                 ✒ Edit Note
               </a>
             </Link>
 
             <button
               type="button"
-              className="px-7 py-3 bg-red-500 text-black font-bold text-lg rounded-full"
+              className="px-7 py-3 bg-red-500 text-black font-bold rounded-full"
               onClick={deleteHandler}
             >
               ⚠ Delete
