@@ -4,7 +4,7 @@ import { BiLoaderAlt } from "react-icons/bi";
 const Loading = () => {
   return (
     <div className="py-10 flex items-center justify-center">
-      <div className="flex gap-3 items-center">
+      <div className="flex gap-3 items-center text-white">
         <BiLoaderAlt className="text-2xl animate-spin" />
         <span className="text-lg font-semibold">Loading...</span>
       </div>

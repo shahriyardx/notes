@@ -36,16 +36,16 @@ const View = () => {
             <Markdown>{note.content}</Markdown>
           </div>
 
-          <div className="mt-10 flex items-center gap-5">
+          <div className="mt-10 flex items-center flex-wrap gap-2">
             <Link href={`/${id}/edit`} passHref>
-              <a className="px-7 py-3 bg-white text-black font-semibold rounded-full no-underline">
+              <a className="px-5 py-2 bg-zinc-600 text-white font-semibold rounded-full no-underline">
                 ✒ Edit Note
               </a>
             </Link>
 
             <button
               type="button"
-              className="px-7 py-3 bg-red-500 text-black font-semibold rounded-full"
+              className="px-5 py-2 bg-red-500 text-black font-semibold rounded-full"
               onClick={deleteHandler}
             >
               ⚠ Delete

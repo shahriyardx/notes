@@ -89,17 +89,17 @@ const Edit = () => {
             <p className="text-red-500">{errors.content?.message}</p>
           </div>
 
-          <div className="mt-5 flex items-center gap-5">
+          <div className="mt-5 flex items-center gap-2 flex-wrap">
             <button
               type="submit"
-              className="px-7 py-3 bg-white text-black font-semibold rounded-full"
+              className="px-5 py-2 bg-zinc-600 text-white font-semibold rounded-full no-underline"
             >
               🚀 Update Note
             </button>
 
             <button
               type="button"
-              className="px-7 py-3 bg-red-500 text-black font-semibold rounded-full"
+              className="px-5 py-2 bg-red-500 text-black font-semibold rounded-full"
               onClick={deleteHandler}
             >
               ⚠ Delete
