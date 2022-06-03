@@ -4,8 +4,7 @@ import React from "react";
 
 const RequireAuth = ({ children }) => {
   const router = useRouter();
-  const { data: session, status } = useSession();
-  console.log(session);
+  const { status } = useSession();
 
   if (status === "loading") {
     return <p>Loadng...</p>;

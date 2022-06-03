@@ -1,5 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import toast from "react-hot-toast";
 import Dashboard from "../components/Layouts/Dashboard";
 
 const Create = () => {
@@ -10,8 +11,21 @@ const Create = () => {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => {
-    console.log(data);
+  const onSubmit = async (data) => {
+    const message = await fetch("/api/note/create", {
+      method: "POST",
+      headers: {
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify(data),
+    }).then((data) => data.json());
+
+    if (message.error) {
+      toast.error(message.error);
+    } else {
+      toast.success(message.message);
+      reset();
+    }
   };
 
   return (
