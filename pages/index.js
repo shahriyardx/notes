@@ -3,6 +3,7 @@ import Note from "../components/Note";
 import { useQuery } from "react-query";
 import Loading from "../components/Loading";
 import Link from "next/link";
+import Meta from "../components/Meta";
 
 const Home = () => {
   const { data: notes, isLoading } = useQuery("notes", () =>
@@ -11,6 +12,7 @@ const Home = () => {
 
   return (
     <Dashboard>
+      <Meta>Notes</Meta>
       {isLoading && <Loading />}
       {notes?.length < 1 && (
         <div className="flex flex-col gap-3 items-center">

@@ -5,6 +5,7 @@ import toast from "react-hot-toast";
 import { useQuery } from "react-query";
 import Dashboard from "../../components/Layouts/Dashboard";
 import Markdown from "marked-react";
+import Meta from "../../components/Meta";
 
 const View = () => {
   const router = useRouter();
@@ -28,6 +29,7 @@ const View = () => {
 
   return (
     <Dashboard>
+      <Meta>{note?.title}</Meta>
       {note && (
         <div className="prose prose-invert mx-auto prose-li:leading-5 prose-sky">
           <h1 className="text-zinc-500">{note.title}</h1>

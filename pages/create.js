@@ -2,6 +2,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
 import Dashboard from "../components/Layouts/Dashboard";
+import Meta from "../components/Meta";
 
 const Create = () => {
   const {
@@ -30,6 +31,7 @@ const Create = () => {
 
   return (
     <Dashboard>
+      <Meta>Create note</Meta>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="flex flex-col gap-3">
           <div className="flex flex-col">

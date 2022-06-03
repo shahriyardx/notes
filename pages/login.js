@@ -1,10 +1,12 @@
 import React from "react";
 import { BsGithub } from "react-icons/bs";
 import { signIn } from "next-auth/react";
+import Meta from "../components/Meta";
 
 const login = () => {
   return (
     <div className="w-full h-screen flex justify-center items-center">
+      <Meta>Login</Meta>
       <button
         onClick={() =>
           signIn("github", {

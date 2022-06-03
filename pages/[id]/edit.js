@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
 import { useQuery } from "react-query";
 import Dashboard from "../../components/Layouts/Dashboard";
+import Meta from "../../components/Meta";
 
 const Edit = () => {
   const router = useRouter();
@@ -58,6 +59,7 @@ const Edit = () => {
 
   return (
     <Dashboard>
+      <Meta>{note?.title}</Meta>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="flex flex-col gap-3">
           <div className="flex flex-col">
