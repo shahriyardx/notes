@@ -13,13 +13,6 @@ export default NextAuth({
     error: "/",
   },
   callbacks: {
-    async signIn({ user }) {
-      if (user.email == "mdshahriyaralam552@gmail.com") {
-        return true;
-      } else {
-        return false;
-      }
-    },
     async session({ session, token }) {
       return session;
     },
