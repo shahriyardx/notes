@@ -4,6 +4,7 @@ import React from "react";
 import toast from "react-hot-toast";
 import { useQuery } from "react-query";
 import Dashboard from "../../components/Layouts/Dashboard";
+import Markdown from "marked-react";
 
 const View = () => {
   const router = useRouter();
@@ -28,21 +29,23 @@ const View = () => {
   return (
     <Dashboard>
       {note && (
-        <div className="prose prose-invert mx-auto">
-          <h1>{note.title}</h1>
+        <div className="prose prose-invert mx-auto prose-li:leading-5 prose-sky">
+          <h1 className="text-zinc-500">{note.title}</h1>
 
-          <div>{note.content}</div>
+          <div>
+            <Markdown>{note.content}</Markdown>
+          </div>
 
           <div className="mt-10 flex items-center gap-5">
             <Link href={`/${id}/edit`} passHref>
-              <a className="px-7 py-3 bg-white text-black font-bold rounded-full no-underline">
+              <a className="px-7 py-3 bg-white text-black font-semibold rounded-full no-underline">
                 ✒ Edit Note
               </a>
             </Link>
 
             <button
               type="button"
-              className="px-7 py-3 bg-red-500 text-black font-bold rounded-full"
+              className="px-7 py-3 bg-red-500 text-black font-semibold rounded-full"
               onClick={deleteHandler}
             >
               ⚠ Delete

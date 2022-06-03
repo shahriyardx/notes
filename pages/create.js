@@ -62,7 +62,7 @@ const Create = () => {
           </div>
 
           <div className="mt-5">
-            <button className="px-7 py-3 bg-white text-black font-bold rounded-full">
+            <button className="px-7 py-3 bg-white text-black font-semibold rounded-full">
               🚀 Create Note
             </button>
           </div>

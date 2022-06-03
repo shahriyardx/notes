@@ -1398,6 +1398,18 @@ lru-cache@^6.0.0:
   dependencies:
     yallist "^4.0.0"
 
+marked-react@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/marked-react/-/marked-react-1.1.2.tgz#c3d9802a13757d82353afee95dace84c22c89908"
+  integrity sha512-GeeAB5iIH4FaSxoQn/pb9iXn1/1Go5Jpa9ZTtNHFRcZ6vpfYOhgWakFMK9fCfvUIHNMa1uh6MHcefgW1Ss5yKw==
+  dependencies:
+    marked "^4.0.12"
+
+marked@^4.0.12:
+  version "4.0.16"
+  resolved "https://registry.yarnpkg.com/marked/-/marked-4.0.16.tgz#9ec18fc1a723032eb28666100344d9428cf7a264"
+  integrity sha512-wahonIQ5Jnyatt2fn8KqF/nIqZM8mh3oRu2+l5EANGMhu6RFjiSG52QNE2eWzFMI94HqYSgN184NurgNG6CztA==
+
 match-sorter@^6.0.2:
   version "6.3.1"
   resolved "https://registry.yarnpkg.com/match-sorter/-/match-sorter-6.3.1.tgz#98cc37fda756093424ddf3cbc62bfe9c75b92bda"

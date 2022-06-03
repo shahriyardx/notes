@@ -92,14 +92,14 @@ const Edit = () => {
           <div className="mt-5 flex items-center gap-5">
             <button
               type="submit"
-              className="px-7 py-3 bg-white text-black font-bold rounded-full"
+              className="px-7 py-3 bg-white text-black font-semibold rounded-full"
             >
               🚀 Update Note
             </button>
 
             <button
               type="button"
-              className="px-7 py-3 bg-red-500 text-black font-bold rounded-full"
+              className="px-7 py-3 bg-red-500 text-black font-semibold rounded-full"
               onClick={deleteHandler}
             >
               ⚠ Delete
