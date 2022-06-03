@@ -48,7 +48,12 @@ const Create = () => {
           </div>
 
           <div className="flex flex-col">
-            <label htmlFor="content">Content</label>
+            <label htmlFor="content">
+              Content{" "}
+              <span className="text-sm text-zinc-500">
+                (Markdown Supported)
+              </span>
+            </label>
             <textarea
               id="content"
               rows="10"
