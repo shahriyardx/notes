@@ -11,7 +11,7 @@ const View = () => {
   const router = useRouter();
   const { id } = router.query;
 
-  const { data: note, isLoading } = useQuery("note", () =>
+  const { data: note, isLoading } = useQuery(["noteDetail", id], () =>
     fetch(`/api/note/${id}`).then((data) => data.json())
   );
 

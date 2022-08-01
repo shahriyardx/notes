@@ -14,7 +14,7 @@ const Edit = () => {
     data: note,
     isLoading,
     refetch,
-  } = useQuery("note", () =>
+  } = useQuery(["noteEdit", id], () =>
     fetch(`/api/note/${id}`).then((data) => data.json())
   );
 
